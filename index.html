@@ -8,13 +8,22 @@
     <title>Regular Expressions Basics</title>
 </head>
 <body>
+<!--    Simple match-->
     [ng] -> Match a single character present in the list below [ng] in the first position of the string either n or g in the first position and after rest of the string
     Test string: ninja ninja ninja ginja inja output: ninja ninja ninja ginja
 
+<!--    Not match-->
     [^abc123]000 Match a single character not present in the list below return true if the string doesn't have starting character any of the ^abc123 single characters
     Test string: abc000 acb000 2000 e000 output: e000
 
+<!--    Ranges-->
     [a-z]inja a-z matches a single character in the range between a (index 97) and z (index 122) (case sensitive)
     [0-9] matches a single digit for numbers
+
+<!--    Repeating characters-->
+    [0-9]+ (+ matches the previous token between one and unlimited times, as many times as possible, giving back as needed (greedy)) 0-9 matches a single character in the range between 0 (index 48) and 9 (index 57) (case sensitive)
+    [0-9]{11} {11} matches the previous token exactly 11 times
+
+    [a-z]{5,8} {5,8} matches the previous token between 5 and 8 times, as many times as possible, giving back as needed
 </body>
 </html>
