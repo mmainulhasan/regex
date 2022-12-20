@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regular Expressions Basics</title>
+</head>
+<body>
+    [ng] -> Match a single character present in the list below [ng] in the first position of the string either n or g in the first position and after rest of the string
+    Test string: ninja ninja ninja ginja inja output: ninja ninja ninja ginja
+
+    [^abc123]000 Match a single character not present in the list below return true if the string doesn't have starting character any of the ^abc123 single characters
+    Test string: abc000 acb000 2000 e000 output: e000
+</body>
+</html>
