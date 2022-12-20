@@ -8,6 +8,9 @@
     <title>Regular Expressions Basics</title>
 </head>
 <body>
+<!--    Test regular expression live site -->
+URL: https://regex101.com/
+
 <!--    Simple match-->
     [ng] -> Match a single character present in the list below [ng] in the first position of the string either n or g in the first position and after rest of the string
     Test string: ninja ninja ninja ginja inja output: ninja ninja ninja ginja
@@ -41,5 +44,20 @@
     - \s matches any whitespace character (equivalent to [\r\n\t\f\v ])
     - \w matches any word character (equivalent to [a-zA-Z0-9_])
     - {5} matches the previous token exactly 5 times
+
+<!--    Special Characters-->
+    - '+' The one-or-more quantifier
+    - '\' The escape character
+    - '[]' The character set
+    - '[^]' Negate symbol in a character set
+    - '?' The zero-or-one quantifier (makes a preceding char optional)
+    - '.' Any character whatsoever (except the newline character
+    - '*' The 0-or-more quantifier (a bit like +)
+
+    hello? ? matches the previous token (which is 0) between zero and one times, as many times as possible
+    - a[a-z]?
+    - car. (. matches any character)
+    - a[a-z]* where * matches the previous token between zero and unlimited times and a-z matches a single character in the range between a (index 97) and z (index 122) not support the digits
+    - abc\* abc matches the characters abc, \* matches the character * with index
 </body>
 </html>
