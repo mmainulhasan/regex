@@ -59,5 +59,11 @@ URL: https://regex101.com/
     - car. (. matches any character)
     - a[a-z]* where * matches the previous token between zero and unlimited times and a-z matches a single character in the range between a (index 97) and z (index 122) not support the digits
     - abc\* abc matches the characters abc, \* matches the character * with index
+
+<!--    Starting and Ending Patterns-->
+    - ^[a-z]{5}$ abcde
+        - ^ asserts position at start of a line
+        - {5} matches the previous token exactly 5 times
+        - $ asserts position at the end of a line
 </body>
 </html>
