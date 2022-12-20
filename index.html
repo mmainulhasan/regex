@@ -25,5 +25,21 @@
     [0-9]{11} {11} matches the previous token exactly 11 times
 
     [a-z]{5,8} {5,8} matches the previous token between 5 and 8 times, as many times as possible, giving back as needed
+
+<!--    Metacharacters-->
+    -   \d match any digit character (same as [0-9])
+    -   \w match any word character (a-Z, A-Z, 0-9 and _'s)
+    -   \s match a whitespace character (spaces, tabs etc)
+    -   \t match a tab character only
+
+    d -- matches the literal character, 'd'
+    \d -- matches any digit character
+
+    \d{3}\s\w{5}
+    - \d matches a digit (equivalent to [0-9])
+    - {3} matches the previous token exactly 3 times
+    - \s matches any whitespace character (equivalent to [\r\n\t\f\v ])
+    - \w matches any word character (equivalent to [a-zA-Z0-9_])
+    - {5} matches the previous token exactly 5 times
 </body>
 </html>
